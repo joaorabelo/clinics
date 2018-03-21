@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBClinicaModelStoreContainer" CdmEntityContainer="DBClinicaEntities">
+    <EntitySetMapping Name="CONVENIOs">
+      <EntityTypeMapping TypeName="DBClinicaModel.CONVENIO">
+        <MappingFragment StoreEntitySet="CONVENIO">
+          <ScalarProperty Name="tel_conv" ColumnName="tel_conv" />
+          <ScalarProperty Name="nome_conv" ColumnName="nome_conv" />
+          <ScalarProperty Name="id_conv" ColumnName="id_conv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PACIENTEs">
+      <EntityTypeMapping TypeName="DBClinicaModel.PACIENTE">
+        <MappingFragment StoreEntitySet="PACIENTE">
+          <ScalarProperty Name="id_conv" ColumnName="id_conv" />
+          <ScalarProperty Name="plano_pac" ColumnName="plano_pac" />
+          <ScalarProperty Name="sexo_pac" ColumnName="sexo_pac" />
+          <ScalarProperty Name="estado_pac" ColumnName="estado_pac" />
+          <ScalarProperty Name="cidade_pac" ColumnName="cidade_pac" />
+          <ScalarProperty Name="data_pac" ColumnName="data_pac" />
+          <ScalarProperty Name="tel_pac" ColumnName="tel_pac" />
+          <ScalarProperty Name="cpf_pac" ColumnName="cpf_pac" />
+          <ScalarProperty Name="end_pac" ColumnName="end_pac" />
+          <ScalarProperty Name="nome_pac" ColumnName="nome_pac" />
+          <ScalarProperty Name="id_pac" ColumnName="id_pac" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONSULTAs">
+      <EntityTypeMapping TypeName="DBClinicaModel.CONSULTA">
+        <MappingFragment StoreEntitySet="CONSULTA">
+          <ScalarProperty Name="med_con" ColumnName="med_con" />
+          <ScalarProperty Name="sit_con" ColumnName="sit_con" />
+          <ScalarProperty Name="id_conv" ColumnName="id_conv" />
+          <ScalarProperty Name="id_med" ColumnName="id_med" />
+          <ScalarProperty Name="id_pac" ColumnName="id_pac" />
+          <ScalarProperty Name="turno_con" ColumnName="turno_con" />
+          <ScalarProperty Name="data_con" ColumnName="data_con" />
+          <ScalarProperty Name="id_con" ColumnName="id_con" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXAMEREQUISICAOs">
+      <EntityTypeMapping TypeName="DBClinicaModel.EXAMEREQUISICAO">
+        <MappingFragment StoreEntitySet="EXAMEREQUISICAO">
+          <ScalarProperty Name="id_exar" ColumnName="id_exar" />
+          <ScalarProperty Name="sit_exar" ColumnName="sit_exar" />
+          <ScalarProperty Name="med_exar" ColumnName="med_exar" />
+          <ScalarProperty Name="id_conv" ColumnName="id_conv" />
+          <ScalarProperty Name="valor_exar" ColumnName="valor_exar" />
+          <ScalarProperty Name="obs_exar" ColumnName="obs_exar" />
+          <ScalarProperty Name="data_exar" ColumnName="data_exar" />
+          <ScalarProperty Name="id_exa" ColumnName="id_exa" />
+          <ScalarProperty Name="id_pac" ColumnName="id_pac" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESPECIALIDADEs">
+      <EntityTypeMapping TypeName="DBClinicaModel.ESPECIALIDADE">
+        <MappingFragment StoreEntitySet="ESPECIALIDADE">
+          <ScalarProperty Name="id_med" ColumnName="id_med" />
+          <ScalarProperty Name="des_esp" ColumnName="des_esp" />
+          <ScalarProperty Name="nome_esp" ColumnName="nome_esp" />
+          <ScalarProperty Name="id_esp" ColumnName="id_esp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicos">
+      <EntityTypeMapping TypeName="DBClinicaModel.MEDICO">
+        <MappingFragment StoreEntitySet="MEDICO">
+          <ScalarProperty Name="id_esp" ColumnName="id_esp" />
+          <ScalarProperty Name="estado_med" ColumnName="estado_med" />
+          <ScalarProperty Name="cidade_med" ColumnName="cidade_med" />
+          <ScalarProperty Name="qtd_aten_med" ColumnName="qtd_aten_med" />
+          <ScalarProperty Name="crm_med" ColumnName="crm_med" />
+          <ScalarProperty Name="tel_med" ColumnName="tel_med" />
+          <ScalarProperty Name="cpf_med" ColumnName="cpf_med" />
+          <ScalarProperty Name="end_med" ColumnName="end_med" />
+          <ScalarProperty Name="nome_med" ColumnName="nome_med" />
+          <ScalarProperty Name="id_med" ColumnName="id_med" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXAMEs">
+      <EntityTypeMapping TypeName="DBClinicaModel.EXAME">
+        <MappingFragment StoreEntitySet="EXAME">
+          <ScalarProperty Name="id_conv" ColumnName="id_conv" />
+          <ScalarProperty Name="obs_exa" ColumnName="obs_exa" />
+          <ScalarProperty Name="nome_exa" ColumnName="nome_exa" />
+          <ScalarProperty Name="id_exa" ColumnName="id_exa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

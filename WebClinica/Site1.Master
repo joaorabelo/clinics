@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebClinica.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    @import url('StyleSheet1.css');
+</style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id ="geral">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div id="cabecalho">
+                 <asp:Image id="Image1" runat="server"
+           AlternateText="Image text"
+                     Width="100%"
+                   Height="250px"
+           ImageUrl="~/img/tecnologiasaude-portal-hospital.jpg"/> 
+            </div>
+        
+                <asp:Menu Orientation="Horizontal" ID="Menu1" Width="100%" runat="server" StaticSubMenuIndent="10px" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1.5em" ForeColor="#7C6F57">
+        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White"></DynamicHoverStyle>
+
+        <DynamicMenuItemStyle HorizontalPadding="25px" VerticalPadding="15px"></DynamicMenuItemStyle>
+
+        <DynamicMenuStyle BackColor="#F7F6F3"></DynamicMenuStyle>
+
+        <DynamicSelectedStyle BackColor="#5D7B9D"></DynamicSelectedStyle>
+        <Items>
+            <asp:MenuItem Text="Cadastrar" Value="Cadastrar">
+                <asp:MenuItem NavigateUrl="~/View/CadastrarMedico.aspx" Text="Médico" Value="Médico"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/CadastrarPaciente.aspx" Text="Paciente" Value="Paciente"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/CadastrarConvenio.aspx" Text="Convênio" Value="Convênio"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/CadastrarExame.aspx" Text="Exame" Value="Exame"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/ManEspecialidade.aspx" Text="Especialidade" Value="Especialidade"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Agendar" Value="Agendar">
+                <asp:MenuItem NavigateUrl="~/View/AgendarConsulta.aspx" Text="Consulta" Value="Consulta"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/CadastrarExaRequesicao.aspx" Text="Exame" Value="Exame"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Listar" Value="Listar">
+                <asp:MenuItem NavigateUrl="~/View/ListarMedico.aspx" Text="M&#233;dico " Value="M&#233;dico"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/ListarPaciente.aspx" Text="Paciente" Value="Paciente"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/ListarExame.aspx" Text="Exame" Value="Exame"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/ListarConvenio.aspx" Text="Conv&#234;nio" Value="Conv&#234;nio"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/ListarConsulta.aspx" Text="Consulta" Value="Consulta"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/ListarExaRequisicao.aspx" Text="Requisi&#231;&#227;o" Value="Requisi&#231;&#227;o"></asp:MenuItem>
+                <asp:MenuItem></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Pesquisar" Value="Pesquisar">
+                <asp:MenuItem NavigateUrl="~/View/BuscarConsulta.aspx" Text="Consulta" Value="Consulta"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/View/BuscarEspecialidade.aspx" Text="Especialidade" Value="Especialidade"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="#7C6F57" ForeColor="White"></StaticHoverStyle>
+
+        <StaticMenuItemStyle HorizontalPadding="25px" VerticalPadding="15px"></StaticMenuItemStyle>
+
+        <StaticSelectedStyle BackColor="#5D7B9D"></StaticSelectedStyle>
+    </asp:Menu>
+              <!--
+                 <ul>
+                    <li>
+                        <a href= "#" >Home</a>
+                    </li>
+                    <li>
+                        <a href="ListarMedico.aspx">Medico </a>
+                    </li>
+                    <li>
+                        <a href="ListarPaciente.aspx">Paciente</a>
+                    </li>
+                    <li>
+                        <a href="ListarConsulta.aspx">Consulta</a>
+                    </li>
+                     <li>
+                        <a href="ListarConvenio.aspx">Convenio</a>
+                    </li>
+                    <li>
+                        <a href="ListarExaRequisicao.aspx">Requisição</a>
+                    </li>
+                    <li>
+                        <a href="ListarExame.aspx">Exame</a>
+                    </li>
+                    
+                </ul>
+                
+                  -->
+            
+                  
+            <div id="conteudo">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </div>
+   <div id="rodape">
+              
+            </div>
+                
+    </form>
+         </div>
+</body>
+</html>
